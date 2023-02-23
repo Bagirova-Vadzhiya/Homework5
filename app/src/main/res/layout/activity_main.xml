@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="ПРИЛОЖЕНИЕ ДЛЯ РАСЧЁТА МАССЫ НЕОБХОДИМОГО ТОПЛИВА."
+        android:textColor="#830000"
+        android:textSize="25sp"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#830000"
+        android:textSize="20sp"
+        android:text="ВВЕДИТЕ МАССУ ГРУЗА."
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/massIn"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:textColor="#830000"
+        android:textColorHint="#830000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="#FDE1E1"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Поле ввода величины массы груза (в кг.)"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#830000"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="РАССЧИТАТЬ МАССУ ТОПЛИВА."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massIn" />
+
+    <TextView
+        android:id="@+id/massOut"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textSize="14sp"
+        android:textColor="#830000"
+        android:textColorHint="#830000"
+        android:background="#FDE1E1"
+        android:hint="Здесь будет отражена необходимая масса топлива, чтобы вывести данный груз на орбиту Марса (в кг.)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
